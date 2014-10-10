@@ -6,6 +6,12 @@ angular.module('learnApp', ['ngAnimate', 'ui.router','ui.bootstrap'])
 
         $stateProvider
 
+        .state('intro', {
+          url: '/intro',
+          templateUrl: 'states/lessonIntro.html',
+          controller: 'stateController'
+        })
+
           // route to show our basic form (/form)
         .state('state', {
             url: '/state',
@@ -16,6 +22,7 @@ angular.module('learnApp', ['ngAnimate', 'ui.router','ui.bootstrap'])
           // nested states
           // each of these sections will have their own view
           // url will be nested (/state/profile)
+
         .state('state.1', {
             url: '/1',
             templateUrl: 'states/state1.html'
@@ -54,12 +61,21 @@ angular.module('learnApp', ['ngAnimate', 'ui.router','ui.bootstrap'])
         .state('state.8', {
           url: '/8',
           templateUrl: 'states/state8.html'
-        });
+        })
+        .state('state.9', {
+          url: '/9',
+          templateUrl: 'states/state9.html'
+        })
 
+        .state('complete', {
+          url: '/complete',
+          templateUrl: 'states/lessonComplete.html',
+          controller: 'stateController'
+        });
 
         // catch all route
         // send users to the first state page
-        $urlRouterProvider.otherwise('/state/1');
+        $urlRouterProvider.otherwise('/intro');
     })
 
 
@@ -86,7 +102,7 @@ angular.module('learnApp', ['ngAnimate', 'ui.router','ui.bootstrap'])
         $scope.open = function (size) {
 
             var modalInstance = $modal.open({
-              templateUrl: 'slideIntro.html',
+              templateUrl: 'lessonInfo.html',
               controller: 'ModalInstanceCtrl',
               size: size,
               resolve: {
@@ -111,7 +127,7 @@ angular.module('learnApp', ['ngAnimate', 'ui.router','ui.bootstrap'])
         $scope.open = function (size) {
 
             var modalInstance = $modal.open({
-                templateUrl: 'lessonIntro.html',
+                templateUrl: 'lessonInfo.html',
                 controller: 'ModalInstanceCtrl',
                 size: size,
                 resolve: {

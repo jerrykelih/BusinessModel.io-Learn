@@ -7,6 +7,7 @@ i.icon:before {
 h1,
 .jumbotron h1 {
   font-size: 3rem;
+  line-height: 4rem;
   margin-top: 10px;
 }
 h2 {
@@ -15,7 +16,7 @@ h2 {
 }
 h3 {
   font-size: 2rem;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 a {
   color: #3397db;
@@ -523,6 +524,98 @@ body {
   background-color: #ddd;
   border: 1px solid #cecece;
 }
+#help-on-canvas {
+  position: fixed;
+  right: 10%;
+  bottom: 0;
+  font-size: 16px;
+  line-height: 16px;
+  z-index: 9999;
+}
+#help-on-canvas li a {
+  background-color: #3397db;
+  color: #fff;
+  text-transform: uppercase;
+}
+body {
+  padding-top: 50px;
+}
+body p {
+  font-size: 16px;
+}
+#lesson .intro-message h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+#lesson .vertical-align {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#lesson #main {
+  -webkit-transition: all 0.15s ease-in-out 0s;
+          transition: all 0.15s ease-in-out 0s;
+  -webkit-transition: all 0.15s easeout 0s;
+          transition: all 0.15s easeout 0s;
+}
+#lesson .ng-enter,
+#lesson .ng-leave,
+#lesson .ng-hide {
+  opacity: 0;
+  height: 0px;
+}
+#lesson .ng-enter-active .ng-leave-active {
+  opacity: 1;
+}
+#lesson #stateNavigation button {
+  padding: 7px 15px;
+}
+#lesson #stateNavigation #title {
+  padding-top: 5px;
+}
+#lesson #stateNavigation #slideButtons {
+  position: absolute;
+  top: -74px;
+}
+#lesson #stateNavigation #slideButtons button {
+  margin: 10px 1px;
+}
+#lesson #stateNavigation #info {
+  margin-left: 10px;
+}
+#lesson #stateNavigation .progress {
+  position: absolute;
+  top: -50px;
+  width: 250px;
+}
+#lesson #statePlaceholder {
+  margin-top: 15px;
+}
+#lesson #statePlaceholder h2 {
+  margin-top: 0px;
+}
+#lesson .jumbo-layover {
+  background-color: #0b1218;
+  opacity: 0.9;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: layoverEnter 0.5s;
+          animation: layoverEnter 0.5s;
+}
+#lesson .jumbo-layover .layover-text,
+#lesson .jumbo-layover.h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 6rem;
+  color: #cfd8dc;
+}
 #stickerStack {
   position: absolute;
   left: 10px;
@@ -597,6 +690,22 @@ body {
 .a60 {
   -webkit-animation: stickerAnimation60 1s;
           animation: stickerAnimation60 1s;
+}
+@-webkit-keyframes layoverEnter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+@keyframes layoverEnter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
 }
 @-webkit-keyframes stickerAnimation20 {
   from {
@@ -704,95 +813,5 @@ body {
   from {
     top: 60%;
     left: 100%;
-  }
-}
-body {
-  padding-top: 50px;
-}
-body p {
-  font-size: 16px;
-}
-#lesson .vertical-align {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#lesson #main {
-  -webkit-transition: all 0.15s ease-in-out 0s;
-          transition: all 0.15s ease-in-out 0s;
-  -webkit-transition: all 0.15s easeout 0s;
-          transition: all 0.15s easeout 0s;
-}
-#lesson .ng-enter,
-#lesson .ng-leave,
-#lesson .ng-hide {
-  opacity: 0;
-  height: 0px;
-}
-#lesson .ng-enter-active .ng-leave-active {
-  opacity: 1;
-}
-#lesson #stateNavigation button {
-  padding: 7px 15px;
-}
-#lesson #stateNavigation #title {
-  padding-top: 5px;
-}
-#lesson #stateNavigation #slideButtons {
-  position: absolute;
-  top: -74px;
-}
-#lesson #stateNavigation #slideButtons button {
-  margin: 10px 1px;
-}
-#lesson #stateNavigation #info {
-  margin-left: 10px;
-}
-#lesson #stateNavigation .progress {
-  position: absolute;
-  top: -50px;
-  width: 250px;
-}
-#lesson #statePlaceholder {
-  margin-top: 15px;
-}
-#lesson #statePlaceholder h2 {
-  margin-top: 0px;
-}
-#lesson .jumbo-layover {
-  background-color: #0b1218;
-  opacity: 0.9;
-  position: absolute;
-  z-index: 9999;
-  width: 100%;
-  height: 100%;
-  -webkit-animation: layoverEnter 0.5s;
-          animation: layoverEnter 0.5s;
-}
-#lesson .jumbo-layover h1 {
-  text-transform: uppercase;
-  font-size: 4rem;
-  line-height: 6rem;
-  color: #cfd8dc;
-}
-@-webkit-keyframes layoverEnter {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.9;
-  }
-}
-@keyframes layoverEnter {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.9;
   }
 }

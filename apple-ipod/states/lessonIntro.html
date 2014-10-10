@@ -1,16 +1,30 @@
 
 <!-- - STICKER-->
 <!-- - CANVAS-->
+<div class="jumbotron jumbo-layover">
+  <div class="jumbotron jumbo-light">
+    <div class="row">
+      <div class="col-xs-3"></div>
+      <div class="col-xs-6 text-center intro-message">
+        <h1>Welcome to<br/>LEARN BUSINESS MODEL*</h1>
+        <h3>We hope you can learn something about business modeling by going through Apple iPod + iTunes example.</h3>
+        <button type="button" ui-sref="state.1" class="btn btn-info btn-lg">Start</button>
+        <p style="margin-top:30px" class="text-uppercase">* This is a prototype, we would<span><a href="mailto:info@businessmodel.io?subject=Feedback on BusinessModel.io Learn App"> love to hear your feedback.</a></span></p>
+      </div>
+      <div class="col-xs-3"></div>
+    </div>
+  </div>
+</div>
 <div class="container">
   <div id="stateNavigation" class="row">
     <div class="col-xs-4"></div>
     <div ng-controller="ProgressBarCtrl" class="col-xs-4">
-      <progressbar value="1" max="8"></progressbar>
+      <progressbar value="5" max="8"></progressbar>
     </div>
     <div class="col-xs-4">
       <div id="slideButtons" class="btn-group">
-        <button type="button" ui-sref="state.1" class="btn btn-info"><span class="glyphicon glyphicon-arrow-left iconLeft"></span>Previous</button>
-        <button type="button" ui-sref="state.3" class="btn btn-info">Next<span class="glyphicon glyphicon-arrow-right iconRight"></span></button>
+        <button type="button" ui-sref="state.5" class="btn btn-info"><span class="glyphicon glyphicon-arrow-left iconLeft"></span>Previous</button>
+        <button type="button" ui-sref="state.7" class="btn btn-info">Next<span class="glyphicon glyphicon-arrow-right iconRight"></span></button>
       </div>
     </div>
   </div>
@@ -45,14 +59,10 @@
               </div>
             </div>
           </div>
-          <div id="sticker" style="left:10%; top:20%;" class="highlight a25">
-            <div class="st-title">Seamless music experience</div>
-          </div>
         </div>
       </div>
     </div>
     <div id="info-placeholder" class="col-xs-4">
-      <h2>Apple promised "seamless music experience"</h2>
       <div id="stickerStack">
         <div id="sticker" class="grey"></div>
         <div id="sticker" class="red"></div>

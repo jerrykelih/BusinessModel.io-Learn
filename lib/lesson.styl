@@ -10,12 +10,19 @@
   }
 }
 
+
 body
   padding-top 50px
   p
     font-size 16px
 
 #lesson
+
+  .intro-message
+    h1
+      font-size: 4rem
+      line-height: 5rem
+
   .vertical-align
     display flex
     align-items center
@@ -62,15 +69,124 @@ body
     background-color: blueGreyDark
     opacity: 0.9
     position absolute
-    z-index: 9999;
+    z-index: 999;
     width: 100%;
     height: 100%;
     animation: layoverEnter 0.5s;
 
-
-    h1
+    .layover-text
+    &.h1
       text-transform: uppercase;
       font-size: 4rem;
       line-height: 6rem;
       color: tan3
 
+
+#stickerStack
+  position: absolute
+  left: 10px;
+  bottom: -35px;
+
+  #sticker
+    width: (container-width / 6)
+    height: (container-width / 6)
+    &.orange
+      transform: rotate(5deg);
+      left: 5px
+
+    &.green
+      transform: rotate(10deg);
+      left: 10px
+
+    &.blue
+      transform: rotate(15deg);
+      left: 15px
+
+    &.red
+      transform: rotate(20deg);
+      left: 20px
+
+    &.grey
+      transform: rotate(25deg);
+      left: 25px
+
+.a20
+  animation: stickerAnimation20 1s
+.a25
+  animation: stickerAnimation25 1s
+.a30
+  animation: stickerAnimation30 1s
+.a35
+  animation: stickerAnimation35 1s
+.a40
+  animation: stickerAnimation40 1s
+.a45
+  animation: stickerAnimation45 1s
+.a50
+  animation: stickerAnimation50 1s
+.a55
+  animation: stickerAnimation55 1s
+.a60
+  animation: stickerAnimation60 1s
+
+@keyframes stickerAnimation20 {
+  from {
+    top: 20%
+    left : 100%
+  }
+}
+
+@keyframes stickerAnimation25 {
+  from {
+    top: 25%
+    left : 100%
+  }
+}
+
+@keyframes stickerAnimation30 {
+  from {
+    top: 30%
+    left : 100%
+  }
+}
+
+@keyframes stickerAnimation35 {
+  from {
+    top: 35%
+    left : 100%
+  }
+}
+
+@keyframes stickerAnimation40 {
+  from {
+    top: 40%
+    left : 100%
+  }
+}
+
+@keyframes stickerAnimation45 {
+  from {
+    top: 45%
+    left : 100%
+  }
+}
+
+@keyframes stickerAnimation50 {
+  from {
+    top: 50%
+    left : 100%
+  }
+}
+
+@keyframes stickerAnimation55 {
+  from {
+    top: 55%
+    left : 100%
+  }
+}
+@keyframes stickerAnimation60 {
+  from {
+    top: 60%
+    left : 100%
+  }
+}

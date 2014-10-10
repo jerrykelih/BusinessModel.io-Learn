@@ -7,6 +7,7 @@ i.icon:before {
 h1,
 .jumbotron h1 {
   font-size: 3rem;
+  line-height: 4rem;
   margin-top: 10px;
 }
 h2 {
@@ -15,7 +16,7 @@ h2 {
 }
 h3 {
   font-size: 2rem;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 a {
   color: #3397db;
