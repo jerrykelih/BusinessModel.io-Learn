@@ -1,4 +1,4 @@
-angular.module('learnApp', ['ngAnimate', 'ui.router','ui.bootstrap'])
+angular.module('learnApp', ['angulartics','angulartics.google.analytics', 'ngAnimate', 'ui.router','ui.bootstrap'])
 
 // Route Configure
 // =============================================================================
