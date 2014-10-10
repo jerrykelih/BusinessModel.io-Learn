@@ -1,0 +1,73 @@
+
+<!-- - STICKER-->
+<!-- - CANVAS-->
+<div class="container">
+  <div id="stateNavigation" class="row">
+    <div class="col-xs-4"></div>
+    <div ng-controller="ProgressBarCtrl" class="col-xs-4">
+      <progressbar value="3" max="8"></progressbar>
+    </div>
+    <div class="col-xs-4">
+      <div id="slideButtons" class="btn-group">
+        <button type="button" ui-sref="state.2" class="btn btn-info"><span class="glyphicon glyphicon-arrow-left iconLeft"></span>Previous</button>
+        <button type="button" ui-sref="state.4" class="btn btn-info">Next<span class="glyphicon glyphicon-arrow-right iconRight"></span></button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div id="canvas-placeholder" class="col-xs-8">
+      <div class="canvas-container">
+        <div id="canvas">
+          <div class="right-side">
+            <div id="b5" class="block">
+              <div class="title text-center">
+                <h3><span class="icon-vp"></span>Value Proposition</h3>
+              </div>
+            </div>
+            <div id="b6" class="block">
+              <div class="title text-center">
+                <h3><span class="icon-cr"></span>Customer Relationships</h3>
+              </div>
+            </div>
+            <div id="b7" class="block">
+              <div class="title text-center">
+                <h3><span class="icon-ch"></span>Channels</h3>
+              </div>
+            </div>
+            <div id="b8" class="block">
+              <div class="title text-center">
+                <h3><span class="icon-cu"></span>Customer Segments</h3>
+              </div>
+            </div>
+            <div id="b9" class="block">
+              <div class="title text-center">
+                <h3><span class="icon-rs"></span>Revenue Streams</h3>
+              </div>
+            </div>
+          </div>
+          <div id="sticker" style="left:10%; top:20%;">
+            <div class="st-title">Seamless music experience</div>
+          </div>
+          <div id="sticker" style="left:80%; top:20%;">
+            <div class="st-title">Mass Market</div>
+          </div>
+          <div id="sticker" style="left:40%; top:42%;" class="highlight a25">
+            <div class="st-title">Apple.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="info-placeholder" class="col-xs-4">
+      <h2>Apple brand recognition</h2>
+      <p>Jobs says “People trust the Apple brand to get the great digital electronics from”</p>
+      <div id="stickerStack">
+        <div id="sticker" class="grey"></div>
+        <div id="sticker" class="red"></div>
+        <div id="sticker" class="blue"></div>
+        <div id="sticker" class="green"></div>
+        <div id="sticker" class="orange"></div>
+        <div id="sticker"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+@import '../../lib/styles/*'
+@import '../../lib/canvas/styles/*'
+
+@keyframes layoverEnter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+body
+  padding-top 50px
+  p
+    font-size 16px
+
+#lesson
+  .vertical-align
+    display flex
+    align-items center
+  #main
+    transition all 0.15s ease-in-out 0s
+    transition all 0.15s easeout 0s
+
+  .ng-enter, .ng-leave, .ng-hide
+    opacity 0
+    height 0px
+
+  .ng-enter-active
+    .ng-leave-active
+      opacity 1
+
+  #stateNavigation
+    button
+      padding: 7px 15px;
+
+    #title
+      padding-top 5px
+    #slideButtons
+      position: absolute
+      top: -74px
+      button
+       margin 10px 1px
+
+    #info
+      margin-left 10px
+    .progress
+      position: absolute;
+      top: -50px;
+      width: 250px;
+
+
+
+  #statePlaceholder
+    margin-top: 15px
+
+    h2
+      margin-top 0px
+
+  .jumbo-layover
+    background-color: blueGreyDark
+    opacity: 0.9
+    position absolute
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    animation: layoverEnter 0.5s;
+
+
+    h1
+      text-transform: uppercase;
+      font-size: 4rem;
+      line-height: 6rem;
+      color: tan3
+
