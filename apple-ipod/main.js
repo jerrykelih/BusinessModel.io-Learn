@@ -71,6 +71,18 @@ angular.module('learnApp', ['ngAnimate', 'ui.router','ui.bootstrap'])
           url: '/complete',
           templateUrl: 'states/lessonComplete.html',
           controller: 'stateController'
+        })
+        .state('complete.1', {
+          url: '/ask',
+          templateUrl: 'states/lessonComplete1.html'
+        })
+        .state('complete.21', {
+          url: '/thank-you',
+          templateUrl: 'states/lessonComplete2-1.html'
+        })
+        .state('complete.22', {
+          url: '/feedback',
+          templateUrl: 'states/lessonComplete2-2.html'
         });
 
         // catch all route
