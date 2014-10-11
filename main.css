@@ -250,3 +250,6 @@ body {
 .navbar-nav.navbar-right {
   float: right;
 }
+body {
+  padding-top: 45px;
+}
