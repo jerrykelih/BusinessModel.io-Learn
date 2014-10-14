@@ -16,11 +16,16 @@
           <label for="first">Easy to download music</label>
         </form>
         <div id="result">
-          <h2 ng-show="content == 'first'" class="wrong answer">Worng answer, Please try again!</h2>
-          <h2 ng-show="content == 'third'" class="wrong answer">Worng answer, Please try again!</h2>
-          <h2 ng-show="content == 'second'" class="correct answer">Correct!<br/>
+          <div ng-show="content == 'first'" class="wrong">
+            <h2>Worng answer, Please try again!</h2>
+          </div>
+          <div ng-show="content == 'third'" class="wrong">
+            <h2>Worng answer, Please try again!</h2>
+          </div>
+          <div ng-show="content == 'second'" class="correct">
+            <h2>Correct!</h2>
             <button type="button" ui-sref="state.2" class="btn btn-success btn-lg">See the canvas</button>
-          </h2>
+          </div>
         </div>
       </h3>
     </div>

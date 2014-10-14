@@ -744,15 +744,15 @@ h1.layover-text {
 }
 #result {
   margin-top: 20px;
-  color: #fff;
 }
-#result h2 {
+#result .correct h2 {
   padding: 20px;
-}
-#result .correct.answer {
+  color: #327921;
   background-color: #90ee90;
 }
-#result .wrong.answer {
+#result .wrong h2 {
+  padding: 20px;
+  color: #fff;
   background-color: #ff6347;
 }
 @-webkit-keyframes layoverEnter {
