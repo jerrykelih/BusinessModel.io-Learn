@@ -5,7 +5,24 @@
   <div class="row">
     <div class="col-xs-3"></div>
     <div class="col-xs-6 text-center">
-      <h1 class="layover-text">Who are their customers?</h1>
+      <h1 id="question" class="layover-text">Who are their customers?</h1>
+      <h3 id="answers">
+        <form>
+          <input id="first" type="radio" name="content" ng-model="content" value="first"/>
+          <label for="first">Only Gadget Geeks</label><br/>
+          <input id="second" type="radio" name="content" ng-model="content" value="third"/>
+          <label for="other">Rich people</label><br/>
+          <input id="third" type="radio" name="content" ng-model="content" value="second"/>
+          <label for="first">Mass market</label>
+        </form>
+        <div id="result">
+          <h2 ng-show="content == 'first'" class="wrong answer">Worng answer, Please try again!</h2>
+          <h2 ng-show="content == 'third'" class="wrong answer">Worng answer, Please try again!</h2>
+          <h2 ng-show="content == 'second'" class="correct answer">Correct!<br/>
+            <button type="button" ui-sref="state.4" class="btn btn-success btn-lg">See the canvas</button>
+          </h2>
+        </div>
+      </h3>
     </div>
     <div class="col-xs-3"></div>
   </div>
@@ -16,12 +33,7 @@
     <div ng-controller="ProgressBarCtrl" class="col-xs-4">
       <progressbar value="1" max="10"></progressbar>
     </div>
-    <div class="col-xs-4">
-      <div id="slideButtons" class="btn-group">
-        <button type="button" ui-sref="state.2" class="btn btn-info"><span class="glyphicon glyphicon-arrow-left iconLeft"></span>Previous</button>
-        <button type="button" ui-sref="state.4" class="btn btn-info">Next<span class="glyphicon glyphicon-arrow-right iconRight"></span></button>
-      </div>
-    </div>
+    <div class="col-xs-4"></div>
   </div>
   <div class="row">
     <div id="canvas-placeholder" class="col-xs-8">

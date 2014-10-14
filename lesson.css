@@ -657,13 +657,6 @@ body p {
   -webkit-animation: layoverEnter 0.5s;
           animation: layoverEnter 0.5s;
 }
-#lesson .jumbo-layover .layover-text,
-#lesson .jumbo-layover.h1 {
-  text-transform: uppercase;
-  font-size: 4rem;
-  line-height: 6rem;
-  color: #cfd8dc;
-}
 #stickerStack {
   position: absolute;
   left: 10px;
@@ -738,6 +731,29 @@ body p {
 .a60 {
   -webkit-animation: stickerAnimation60 1s;
           animation: stickerAnimation60 1s;
+}
+#question,
+h1.layover-text {
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 5rem;
+  color: #cfd8dc;
+}
+#answers {
+  color: #cfd8dc;
+}
+#result {
+  margin-top: 20px;
+  color: #fff;
+}
+#result h2 {
+  padding: 20px;
+}
+#result .correct.answer {
+  background-color: #90ee90;
+}
+#result .wrong.answer {
+  background-color: #ff6347;
 }
 @-webkit-keyframes layoverEnter {
   from {
